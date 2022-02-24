@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:futurejob/0_theme.dart';
 import 'package:futurejob/pages/3_signin_page.dart';
+import 'package:futurejob/pages/4_signup_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class StartPage extends StatelessWidget {
@@ -71,7 +72,13 @@ class StartPage extends StatelessWidget {
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => SignUpPage()),
+                              );
+                            },
                           ),
                         ),
                         SizedBox(
